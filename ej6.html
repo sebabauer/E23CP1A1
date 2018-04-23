@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+</head>
+<body>
+    <button>Clasificar Arreglo</button>
+    <ul id="par">
+        <strong>Pares</strong>
+    </ul>
+    <ul id="impar">
+        <strong>Impares</strong>
+    </ul>
+    <ul id="string">
+        <strong>Strings</strong>
+    </ul>
+    <script>
+        var arr = [1,'dos','tres',4,5,6,'siete',8,9,'diez'];
+
+        for (var i = 0; i < arr.lenght; i++){
+          if ((arr[i] % 2) == 0) {
+            x = arr[i];
+            p = document.getElementById('par');
+            p.append(x);
+          } else if (((arr[i] % 2) != 0)) {
+            x = arr[i];
+            p = document.getElementById('impar');
+            p.append(x);
+
+          } else{
+            x = arr[i];
+            p = document.getElementById('string');
+            p.append(x);
+
+          }
+        }
+    </script>
+</body>
+</html>
